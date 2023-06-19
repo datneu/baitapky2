@@ -15,11 +15,11 @@ const Listcheck = () => {
                 <label className="form-check-label" htmlFor="flexRadioDefault1"> Jogging </label>
             </div>
             <div className="form-check">
-                <input className="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3" />
+                <input className="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault4" />
                 <label className="form-check-label" htmlFor="flexRadioDefault1"> Learn React </label>
             </div>
             <div className="form-check">
-                <input className="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3" />
+                <input className="form-check-input" type="radio" name="flexRadioDefault5" id="flexRadioDefault5" />
                 <label className="form-check-label" htmlFor="flexRadioDefault1"> Doing excercies </label>
             </div>
         </div>
