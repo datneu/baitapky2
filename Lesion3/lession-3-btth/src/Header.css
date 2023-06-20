@@ -1,0 +1,12 @@
+.header{
+  color: aliceblue;
+  background-color: black;
+  margin: 20px;
+}
+.header h2{
+  padding-top: 10px;
+}
+.header a{
+  color: aliceblue;
+  font-size: 70%;
+}
