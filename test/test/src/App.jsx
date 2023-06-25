@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './component/buldle.css'
 import './component/Pcmail-catelogy.css'
 import Sortbar from './component/Sortbar';
-import Cart5 from './component/Cart5';
 import ProductForm from './component/ProducFrom';
 import ProductList from './component/Produclist';
 

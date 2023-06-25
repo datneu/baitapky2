@@ -15,7 +15,7 @@ function ProductList({ products }) {
                           alt="Dây đeo cao su Mi band 5, miband 6 chính hãng Mijobs - dây đeo cao su thay thế mi band 6, miband 5 (Mijobs)"
                           className="B0Ze3i wAkToc"
                           style={{ objectFit: 'contain' }}
-                          src="https://down-vn.img.susercontent.com/file/11e55456ffd583b6ad97e93e4d8e4f52_tn"
+                          src={product.url}
                         />
                         <div className="sWDsGo">
                           <div className="oiV-yk oqpuuD POAPqq">
@@ -25,7 +25,7 @@ function ProductList({ products }) {
                         </div>
                         <div className="rLu1yl">
                           <div className="customized-overlay-image">
-                            <img src="https://down-vn.img.susercontent.com/file/vn-50009109-07bb8bd5f2385de5d0ae2b5e25dd883e" width="" height="" />
+                            <img src='' width="" height="" />
                           </div>
                         </div>
                       </div>

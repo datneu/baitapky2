@@ -6,10 +6,8 @@ function ProductForm({ onProductCreate }) {
     const [price2, setPrice2] = useState("");
     const [discount, setDiscount] = useState("");
     const [description, setDescription] = useState("");
+    const [selectedImage, setSelectedImage] = useState("");
 
-    const handleNameChange = (event) => {
-        setName(event.target.value);
-    };
 
     const handlePrice1Change = (event) => {
         setPrice1(event.target.value);
@@ -25,6 +23,22 @@ function ProductForm({ onProductCreate }) {
         setDescription(event.target.value);
     };
 
+    const handleImageUpload = (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = () => {
+            setSelectedImage(reader.result);
+            };
+        reader.readAsDataURL(file);
+        }
+    }
+
+    const handleNameChange = (event) => {
+        setName(event.target.value);
+    };
+
+    
     const handleSubmit = (event) => {
         event.preventDefault();
 
@@ -35,6 +49,7 @@ function ProductForm({ onProductCreate }) {
             price2: price2,
             discount:discount,
             description: description,
+            url:selectedImage,
         };
 
         // Gọi hàm callback để truyền sản phẩm mới về component cha
@@ -46,6 +61,7 @@ function ProductForm({ onProductCreate }) {
         setPrice2("");
         setDiscount("");
         setDescription("");
+        setSelectedImage("");
     };
 
     return (
@@ -76,7 +92,7 @@ function ProductForm({ onProductCreate }) {
                     </div>
                     <div className="mb-3">
                         <label htmlFor="formFile" className="form-label">Ảnh</label>
-                        <input className="form-control" type="file" id="formFile" />
+                        <input className="form-control" type="file" onChange={handleImageUpload} id="formFile" />
                     </div>
                 </div>
                 <button type="sumit" className="btn btn-success m-3">Thêm</button>
